@@ -30,6 +30,20 @@ int[,] GetArrayRandom(int rows, int cols, int minValue, int maxValue)
     return array;
 }
 
+// int ArraySumOfMain(int[,] array)
+// {
+//     int count = 0;
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             if(i == j)
+//             count += array[i, j];
+//         }
+//     }
+//     return count;    
+// }
+
 int ArraySumOfMain(int[,] array)
 {
     int count = 0;
@@ -38,7 +52,7 @@ int ArraySumOfMain(int[,] array)
         for (int j = 0; j < array.GetLength(1); j++)
         {
             if(i == j)
-            count = count + array[i, j];
+            count += array[i, j];
         }
     }
     return count;    
